@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>How many days?</title>
+
+		<link rel="stylesheet" href="./style.css" type="text/css" />
+		<!-- javascript date calculation module -->
+		<script src="app.js"></script>
+
+		<!-- import google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<!-- todo: consider adding a header with night mode toggle
+            <nav id="navbar">
+			<ul class="nav-list">
+				<li><a href="">night mode</a></li>
+			</ul>
+		</nav> -->
+
+		<section id="main-content">
+			<h1>Hows many days?</h1>
+
+			<p>Enter two dates and I will tell you the distance between them.</p>
+
+			<br />
+
+			<section id="form-container">
+				<form
+					name="howManyDaysForm"
+					id="howManyDaysForm"
+					action="javascript:void(0);"
+				>
+					<div class="formItem">
+						<label for="firstDate" class="bold">first date</label>
+						<input type="date" name="firstDate" id="firstDate" class="round" />
+					</div>
+
+					<div class="formItem">
+						<label for="secondDate" class="bold">second date</label>
+						<input
+							type="date"
+							name="secondDate"
+							id="secondDate"
+							class="round"
+						/>
+					</div>
+
+					<button
+						id="submit"
+						class="button round bold"
+						onclick="javascript:calculate();"
+					>
+						calculate
+					</button>
+				</form>
+			</section>
+
+			<section id="result" class="hidden">
+				<p>
+					<span id="days">0</span>
+					<span id="days-label">days</span>
+				</p>
+			</section>
+		</section>
+
+		<!-- begin global footer -->
+		<footer id="footer">
+			<p>
+				&copy; 2022 created by
+				<a href="https://github.com/evebyte" target="_blank">eve</a>
+			</p>
+		</footer>
+	</body>
+</html>
