@@ -173,6 +173,7 @@ a:hover {
 	padding: 10px;
 	color: var(--textColor);
 	background: #fff;
+	width: auto;
 }
 
 #howManyDaysForm input:focus-visible {
