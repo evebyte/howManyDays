@@ -49,6 +49,11 @@ footer {
 	font-weight: bold !important;
 }
 
+.row {
+	max-width: 400px;
+	margin: 0 auto;
+}
+
 /* ### page styles ### */
 
 #howManyDaysForm {
