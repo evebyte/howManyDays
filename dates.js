@@ -7,7 +7,7 @@ function howManySeconds(firstDate, secondDate) {
 }
 
 // how many seconds test
-console.log(howManySeconds(new Date("2020-01-01"), new Date("2020-01-02")));
+// console.log(howManySeconds(new Date("2020-01-01"), new Date("2020-01-02")));
 
 // how many minutes between two dates
 function howManyMinutes(firstDate, secondDate) {
@@ -19,7 +19,7 @@ function howManyMinutes(firstDate, secondDate) {
 }
 
 // how many minutes test
-console.log(howManyMinutes("2020-01-01", "2020-01-02"));
+// console.log(howManyMinutes("2020-01-01", "2020-01-02"));
 
 // how many hours between two dates
 function howManyHours(firstDate, secondDate) {
@@ -31,7 +31,7 @@ function howManyHours(firstDate, secondDate) {
 }
 
 // how many hours test
-console.log(howManyHours("2020-01-01", "2020-01-02"));
+// console.log(howManyHours("2020-01-01", "2020-01-02"));
 
 //  how many days between two dates
 function howManyDays(firstDate, secondDate) {
@@ -42,7 +42,7 @@ function howManyDays(firstDate, secondDate) {
 }
 
 // how many days test
-console.log(howManyDays("09/14/2019", "04/25/2022"));
+// console.log(howManyDays("09/14/2019", "04/25/2022"));
 
 // how many months between two dates
 function howManyMonths(firstDate, secondDate) {
@@ -55,7 +55,7 @@ function howManyMonths(firstDate, secondDate) {
 }
 
 // how many months test
-console.log(howManyMonths("09/14/2019", "04/25/2022"));
+// console.log(howManyMonths("09/14/2019", "04/25/2022"));
 
 // how many years between two dates
 function howManyYears(firstDate, secondDate) {
@@ -68,12 +68,9 @@ function howManyYears(firstDate, secondDate) {
 }
 
 // how many years test
-console.log(howManyYears("09/14/2019", "04/25/2022"));
+// console.log(howManyYears("09/14/2019", "04/25/2022"));
 
 // #########################################################################
-
-// let firstDate = document.getElementById("firstDate");
-// let secondDate = document.getElementById("secondDate");
 
 // calculate the results onclick of submit button
 function calculate() {
@@ -121,5 +118,6 @@ function calculate() {
 
 		// display the results
 		document.getElementById("days").innerHTML = days;
+		document.getElementById("years").innerHTML = years;
 	}
 }

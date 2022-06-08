@@ -7,8 +7,9 @@
 		<title>How many days?</title>
 
 		<link rel="stylesheet" href="./style.css" type="text/css" />
-		<!-- javascript date calculation module -->
-		<script src="app.js"></script>
+
+		<!-- js date calculation module -->
+		<script src="./dates.js"></script>
 
 		<!-- import google fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,67 +18,108 @@
 			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
 			rel="stylesheet"
 		/>
+
+		<!-- import bootstrap (css only)-->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+			crossorigin="anonymous"
+		/>
 	</head>
 	<body>
-		<!-- todo: consider adding a header with night mode toggle
-            <nav id="navbar">
-			<ul class="nav-list">
-				<li><a href="">night mode</a></li>
-			</ul>
-		</nav> -->
+		<main class="fluid-container">
+			<h1 class="display-2 text-center bold">Hows many days?</h1>
 
-		<section id="main-content">
-			<h1>Hows many days?</h1>
+			<p class="text-center">
+				Enter two dates and I will tell you the distance between them.
+			</p>
 
-			<p>Enter two dates and I will tell you the distance between them.</p>
-
-			<br />
-
-			<section id="form-container">
-				<form
-					name="howManyDaysForm"
-					id="howManyDaysForm"
-					action="javascript:void(0);"
-				>
-					<div class="formItem">
-						<label for="firstDate" class="bold">first date</label>
-						<input type="date" name="firstDate" id="firstDate" class="round" />
-					</div>
-
-					<div class="formItem">
-						<label for="secondDate" class="bold">second date</label>
-						<input
-							type="date"
-							name="secondDate"
-							id="secondDate"
-							class="round"
-						/>
-					</div>
-
-					<button
-						id="submit"
-						class="button round bold"
-						onclick="javascript:calculate();"
+			<section class="container">
+				<div class="col">
+					<form
+						name="howManyDaysForm"
+						id="howManyDaysForm"
+						action="javascript:void(0);"
 					>
-						calculate
-					</button>
-				</form>
+						<div class="row mb-3">
+							<label for="firstDate" class="form-label bold">First Date</label>
+
+							<div class="d-grid gap-2">
+								<input
+									type="date"
+									name="firstDate"
+									id="firstDate"
+									class="form-control"
+								/>
+							</div>
+						</div>
+
+						<div class="row mb-3">
+							<label for="secondDate" class="bold form-label"
+								>Second Date</label
+							>
+
+							<div class="d-grid gap-2">
+								<input
+									type="date"
+									name="secondDate"
+									id="secondDate"
+									class="form-control"
+								/>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="d-grid gap-2">
+								<button
+									id="submit"
+									class="btn btn-primary"
+									onclick="javascript:calculate();"
+								>
+									<i class="fa-solid fa-calendar-check"></i>
+
+									Calculate
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
 			</section>
 
-			<section id="result" class="hidden">
+			<section id="result" class="hidden text-center">
+				<!-- todo: add if >365 display years -->
 				<p>
 					<span id="days">0</span>
 					<span id="days-label">days</span>
+					<!-- 					
+				<span>or about</span>
+				<span id="years">0</span>
+				<span id="years-label">years</span> -->
 				</p>
 			</section>
-		</section>
+		</main>
 
 		<!-- begin global footer -->
-		<footer id="footer">
-			<p>
-				&copy; 2022 created by
-				<a href="https://github.com/evebyte" target="_blank">eve</a>
-			</p>
+		<footer class="text-center">
+			<span>
+				&copy; 2022 made by
+				<a
+					href="https://github.com/evebyte"
+					target="_blank"
+					class="link-warning"
+				>
+					eve
+				</a>
+			</span>
 		</footer>
+
+		<!-- todo: replace vanilla js with jQuery -->
+
+		<!-- import font awesome -->
+		<script
+			src="https://kit.fontawesome.com/7872fa4853.js"
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>
