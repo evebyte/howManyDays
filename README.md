@@ -2,7 +2,7 @@
 
 How many days is a simple web app that determines the number of days between two dates.
 
- file:///home/eve/Pictures/Screenshots/how-many-days-screenshot.png
+![image](file:///home/eve/Pictures/Screenshots/how-many-days-screenshot.png)
 
 Changes:
 
